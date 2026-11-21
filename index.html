@@ -8,177 +8,258 @@
 </head>
 <body>
   <header class="top-bar">
-    <div class="brand">📚 FinWiki × 指數化投資知識庫</div>
+    <div class="brand">FinWiki × 指數化投資知識庫</div>
     <nav class="nav-links">
-      <a href="index.html" class="nav-btn active">LLM Wiki 知識庫（5 篇）</a>
-      <a href="slides.html" class="nav-btn">開啟教學 HTML 簡報（9 頁）→</a>
+      <a href="index.html" class="nav-btn active">LLM Wiki 知識庫</a>
+      <a href="slides.html" class="nav-btn">教學 HTML 簡報 →</a>
+      <a href="#submission-info" class="nav-btn">作業繳交資訊</a>
     </nav>
   </header>
 
   <main class="container">
     <section class="hero-box">
       <div class="hero-text">
-        <span class="kicker">LLM Wiki Knowledge Base（5 Ingested Notes）</span>
+        <span class="kicker">LLM Wiki Knowledge Base · 教學用途，非投資建議</span>
         <h1>個人理財與指數化投資入門 Wiki</h1>
-        <p>本知識庫透過「先討論、後生成」結構化整理 5 篇核心理財概念（通膨複利、緊急預備金、指數 ETF、股息迷思、定期定額），並作為下方教學 HTML 簡報的唯一知識來源。</p>
+        <p>先討論再生成 5 篇結構化理財 Wiki 條目，搭配原始來源清單、執行日誌與雙重檢查迴圈（Double-Loop Graph），轉譯為零基礎易懂的教學 HTML 簡報。</p>
       </div>
-      <a href="slides.html" class="cta-slides">🎬 開始觀看 9 頁教學簡報 →</a>
+      <a href="slides.html" class="cta-slides">開啟教學 HTML 簡報 →</a>
     </section>
 
-    <!-- 5 篇 LLM Wiki 互動閱讀器 -->
-    <section class="wiki-layout">
+    <!-- 5 篇 LLM Wiki 閱讀器 -->
+    <section class="wiki-layout" id="wiki-reader">
       <aside class="wiki-sidebar">
-        <h2>🗂️ Wiki 知識條目（共 5 篇）</h2>
-        <button type="button" class="wiki-tab active" data-target="wiki-1">
-          01. 通膨侵蝕與複利雪球
-          <small>01-inflation-and-compounding.md</small>
-        </button>
-        <button type="button" class="wiki-tab" data-target="wiki-2">
-          02. 緊急預備金配置原則
-          <small>02-emergency-fund.md</small>
-        </button>
-        <button type="button" class="wiki-tab" data-target="wiki-3">
-          03. 指數化投資與 ETF
-          <small>03-index-etf-basics.md</small>
-        </button>
-        <button type="button" class="wiki-tab" data-target="wiki-4">
-          04. 配息左手換右手迷思
-          <small>04-dividend-myths.md</small>
-        </button>
-        <button type="button" class="wiki-tab" data-target="wiki-5">
-          05. 定期定額與投資紀律
-          <small>05-asset-allocation.md</small>
-        </button>
+        <h2>Wiki 條目（5 篇）</h2>
+        <button type="button" class="wiki-tab active" data-target="wiki-1">01. 通膨與複利<small>01-inflation-and-compounding.md</small></button>
+        <button type="button" class="wiki-tab" data-target="wiki-2">02. 緊急預備金<small>02-emergency-fund.md</small></button>
+        <button type="button" class="wiki-tab" data-target="wiki-3">03. 指數化投資與 ETF<small>03-index-etf-basics.md</small></button>
+        <button type="button" class="wiki-tab" data-target="wiki-4">04. 配息迷思與總報酬<small>04-dividend-myths.md</small></button>
+        <button type="button" class="wiki-tab" data-target="wiki-5">05. 定期定額與紀律<small>05-dca-and-discipline.md</small></button>
       </aside>
 
       <div class="wiki-viewer">
-        <!-- Wiki 1 -->
         <article class="wiki-article active" id="wiki-1">
           <div class="wiki-meta-bar">
-            <span>來源檔案：<code>01-inflation-and-compounding.md</code></span>
-            <a href="01-inflation-and-compounding.md" target="_blank">查看原始 Markdown ↗</a>
+            <span>來源：<code>01-inflation-and-compounding.md</code></span>
+            <a href="01-inflation-and-compounding.md" target="_blank">開啟 .md ↗</a>
           </div>
           <h2>01. 為什麼錢放銀行會變窮？——通膨與複利效應</h2>
-          <p>許多大學生與新鮮人習慣把打工或薪水存進一般活存帳戶（年利率約 0.5%～1%），認為「本金不會少就是最安全」，卻忽略了購買力正在逐年縮水。</p>
-          <div class="analogy-card">
-            <strong>💡 生活化比喻：</strong>十年前一個排骨便當 70 元，現在要 110 元。錢的「數字面額」沒變，但實質能買到的東西變少了，這就是通貨膨脹。
-          </div>
-          <h3>核心公式與對照實驗</h3>
-          <div class="formula-pill">
-            複利公式：FV = PV × (1 + r)ⁿ ｜ 72 法則：資產翻倍年數 ≈ 72 ÷ 年化報酬率(%)
-          </div>
+          <p>活存名目餘額不變，但物價上漲會削弱購買力；複利則讓本金與前期報酬在後續週期持續滾動。</p>
+          <div class="analogy-card"><strong>生活舉例（示範情境）：</strong>便當從 70 元漲到 110 元，1,000 元可買數量從 14 個降為 9 個（減少約 35.7%，約 36%）。</div>
+          <div class="formula-pill">複利公式：FV = PV × (1 + r)ⁿ ｜ 72 法則：翻倍年數 ≈ 72 ÷ R（R 為假設值，非保證）</div>
           <ul>
-            <li><strong>單筆 10 萬元放銀行定存（年化 1.5%）</strong>：20 年後約 <strong>13.5 萬元</strong>，勉強打平物價上漲。</li>
-            <li><strong>單筆 10 萬元投入大盤指數（年化 7%）</strong>：20 年後約 <strong>38.7 萬元</strong>（差距高達 2.8 倍）。</li>
-            <li><strong>72 法則速算</strong>：年化報酬率 7% 時，資產大約每 <strong>10.3 年</strong>翻倍一次。</li>
+            <li>100,000 元放 20 年：假設年化 1.5% 約 <strong>13.5 萬元</strong>；假設年化 7.0%（非保證）約 <strong>38.7 萬元</strong>。</li>
+            <li>利率與通膨會隨時間與政策變動，請以實際查詢日期與公告為準。</li>
           </ul>
+          <p class="ref-note"><strong>參考來源：</strong>Titan FX 通膨詞彙、OANDA Lab 72 法則（擷取日期：2026-11-21）。</p>
         </article>
 
-        <!-- Wiki 2 -->
         <article class="wiki-article" id="wiki-2">
           <div class="wiki-meta-bar">
-            <span>來源檔案：<code>02-emergency-fund.md</code></span>
-            <a href="02-emergency-fund.md" target="_blank">查看原始 Markdown ↗</a>
+            <span>來源：<code>02-emergency-fund.md</code></span>
+            <a href="02-emergency-fund.md" target="_blank">開啟 .md ↗</a>
           </div>
           <h2>02. 投資前先穿防彈衣——緊急預備金配置原則</h2>
-          <p>新手最常犯的錯誤是「把帳戶裡所有的錢一次投入股市」，結果遇到突發狀況（如生病、車禍維修、待業）時，被迫在股市大跌的低點認賠賣出股票換現金。</p>
-          <div class="analogy-card">
-            <strong>💡 生活化比喻：</strong>緊急預備金就像開車繫安全帶或打遊戲穿防彈衣，平常覺得占空間，但遇到意外時能保住你不出局。
-          </div>
-          <h3>準備水位與存放三大原則</h3>
+          <p>遇到突發支出時若缺乏現金，容易被迫在市場低點賣出投資部位。</p>
+          <div class="analogy-card"><strong>生活類比：</strong>就像出門前先備妥雨具與安全裝備，平常未必動用，但突發狀況來臨時能避免被迫中斷計畫。</div>
           <ul>
-            <li><strong>計算基準</strong>：以「每月必要生活開銷」（房租、伙食、交通）為準，而非月薪。</li>
-            <li><strong>安全水位</strong>：學生與家人同住者準備 <strong>3 個月</strong>生活費；獨立租屋的社會新鮮人準備 <strong>6 個月</strong>生活費。</li>
-            <li><strong>存放工具</strong>：必須具備「高流動性、零本金波動」，推薦放在<strong>數位銀行高利活存</strong>（1.5%～2.5%），不可拿去買股票或綁長年期儲蓄險。</li>
+            <li>以「每月必要生活支出」為計算基準，而非總薪資；常見參考為 <strong>3～6 個月</strong>必要支出。</li>
+            <li>重視高流動性與低波動，實際存款利率依機構公告與查詢日期而定。</li>
           </ul>
+          <p class="ref-note"><strong>參考來源：</strong>Mr.Market 市場先生《緊急預備金是什麼？多少才夠？》（擷取日期：2026-11-21）。</p>
         </article>
 
-        <!-- Wiki 3 -->
         <article class="wiki-article" id="wiki-3">
           <div class="wiki-meta-bar">
-            <span>來源檔案：<code>03-index-etf-basics.md</code></span>
-            <a href="03-index-etf-basics.md" target="_blank">查看原始 Markdown ↗</a>
+            <span>來源：<code>03-index-etf-basics.md</code></span>
+            <a href="03-index-etf-basics.md" target="_blank">開啟 .md ↗</a>
           </div>
           <h2>03. 不挑個股也能贏多數人——指數化投資與 ETF</h2>
-          <p>一般人沒有時間每天研究財報，單壓一兩家公司的股票容易面臨「賺了指數、賠了個股」甚至單一企業衰退的風險。</p>
-          <div class="analogy-card">
-            <strong>💡 生活化比喻：</strong>買個股像是「賭某位選手在奧運百米拿金牌」；買市值型 ETF 則是「直接買下整個奧運代表隊」，靠整體經濟成長獲利。
-          </div>
-          <h3>代表標的與內扣費用殺傷力</h3>
+          <p>ETF 追蹤指數表現，一筆交易即可分散持有一籃子成分股，避免單一標的風險。</p>
+          <div class="analogy-card"><strong>生活類比：</strong>單押少數個股像賭單一選手；分散型 ETF 像參與整支隊伍的整體表現。</div>
           <ul>
-            <li><strong>自動汰弱留強</strong>：市值型 ETF（台股如 <strong>0050 / 006208</strong>，美股如 <strong>VOO</strong>）會定期把市值縮水的公司剔除，納入成長壯大的新企業。</li>
-            <li><strong>內扣費用（Expense Ratio）</strong>：同樣投入 100 萬元、年化報酬 7% 放 30 年，內扣 <strong>0.03%</strong>（VOO）可累積約 <strong>755 萬元</strong>；若買內扣 <strong>1.5%</strong> 的基金只剩 <strong>498 萬元</strong>，超過 250 萬元被費用吃掉。</li>
+            <li><strong>內扣費用試算（假設本金 100 萬元、30 年、稅前毛報酬皆假設為 7.0% 非保證，未計交易稅費與股利稅）</strong>：內扣 <strong>0.03%</strong> 約 <strong>755 萬元</strong>；內扣 <strong>1.50%</strong> 約 <strong>498 萬元</strong>，差額約 <strong>256.4 萬元</strong>（約占 755 萬的 <strong>34%</strong>，非一半）。</li>
           </ul>
+          <p class="ref-note"><strong>參考來源：</strong>渣打銀行台灣《ETF內扣費用是什麼？會影響報酬嗎？》（擷取日期：2026-11-21）。</p>
         </article>
 
-        <!-- Wiki 4 -->
         <article class="wiki-article" id="wiki-4">
           <div class="wiki-meta-bar">
-            <span>來源檔案：<code>04-dividend-myths.md</code></span>
-            <a href="04-dividend-myths.md" target="_blank">查看原始 Markdown ↗</a>
+            <span>來源：<code>04-dividend-myths.md</code></span>
+            <a href="04-dividend-myths.md" target="_blank">開啟 .md ↗</a>
           </div>
-          <h2>04. 配息不是天上掉下來的禮物——市值型 vs 高股息迷思</h2>
-          <p>許多新手特別偏愛「高股息 ETF」，誤以為領到現金股息就是額外多賺的零用錢，忽略了「除息參考價扣減」與「總報酬率」。</p>
-          <div class="analogy-card">
-            <strong>💡 生活化比喻：</strong>高股息配息就像「把你左邊口袋的 100 元鈔票，拆成 95 元放左口袋、5 元放右口袋」，總金額在發放當下完全沒有變多。
-          </div>
-          <h3>總報酬率（Total Return）才是唯一標準</h3>
+          <h2>04. 配息不是天上掉下來的禮物——市值型 vs 總報酬觀念</h2>
+          <p>除息日股價原則上會向下調整參考價，配息不等於額外憑空多出的獲利。</p>
+          <div class="analogy-card"><strong>生活類比：</strong>100 元配息 5 元，除息參考價調為 95 元；95 元資產加 5 元現金仍為 100 元（未填息且未計稅費前）。</div>
           <ul>
-            <li><strong>除息機制</strong>：股價 100 元配息 5 元，除息日開盤價會直接扣減為 95 元；必須等到股價漲回 100 元（填息）才算真正獲利。</li>
-            <li><strong>年輕累積期策略</strong>：年輕人不需要靠股息過生活，領息反而可能被課稅與扣二代健保（2.11%），且中斷複利效果，應優先選擇<strong>市值型 ETF</strong>。</li>
+            <li>評估投資應看<strong>總報酬率</strong>，配息率不等於總報酬率。</li>
+            <li>二代健保補充費率（現行 2.11%）有單次給付門檻；美股股息對台灣投資人常見有 30% 預扣稅規定，實際以最新法規為準。</li>
           </ul>
+          <p class="ref-note"><strong>參考來源：</strong>渣打銀行台灣《ETF內扣費用是什麼？會影響報酬嗎？》（擷取日期：2026-11-21）。</p>
         </article>
 
-        <!-- Wiki 5 -->
         <article class="wiki-article" id="wiki-5">
           <div class="wiki-meta-bar">
-            <span>來源檔案：<code>05-asset-allocation.md</code></span>
-            <a href="05-asset-allocation.md" target="_blank">查看原始 Markdown ↗</a>
+            <span>來源：<code>05-dca-and-discipline.md</code></span>
+            <a href="05-dca-and-discipline.md" target="_blank">開啟 .md ↗</a>
           </div>
-          <h2>05. 睡得著覺的投資法——定期定額與紀律執行</h2>
-          <p>許多人一進場就天天盯盤，遇到下跌就恐慌賣出，或是總想著「等跌到最低點再買」，結果一路空手看著大盤創新高。</p>
-          <div class="analogy-card">
-            <strong>💡 生活化比喻：</strong>定期定額就像去超市買水果，每個月固定花 3,000 元：水果變貴時少買幾顆，水果大特價時自動多買幾顆，長期平均成本自然漂亮。
-          </div>
-          <h3>微笑曲線與新手執行三步驟</h3>
+          <h2>05. 睡得著覺的投資法——定期定額與投資紀律</h2>
+          <p>固定時間投入固定金額可平攤成本，避免因追高殺低或猜測高低點而錯失紀律。</p>
+          <div class="analogy-card"><strong>生活類比：</strong>固定預算買水果，貴時少買、便宜時多買，市場回升時低檔單位數有助於改善平均成本。</div>
           <ul>
-            <li><strong>微笑曲線（Smile Curve）</strong>：市場經歷「下跌 → 盤整 → 回升」時，低檔累積的便宜股數會在回升時帶來豐厚報酬。</li>
-            <li><strong>待在市場勝過預測市場</strong>：錯過過去 20 年表現最好的 10 個交易日，長期總報酬會直接腰斬。</li>
+            <li>扣款金額以不影響必要生活為原則，歷史模擬或過往績效不代表未來保證。</li>
           </ul>
+          <p class="ref-note"><strong>參考來源：</strong>基富通／元大投信《【定期定額密技】技巧3：持續扣款、紀律投資》（擷取日期：2026-11-21）。</p>
         </article>
       </div>
     </section>
 
-    <!-- Loop / Graph 流程設計視覺化 -->
-    <section class="loop-section">
-      <h2>🔄 本專案的 Double-Loop Graph 資訊處理與檢查架構</h2>
-      <p style="color:var(--text-muted);font-size:0.92rem;">說明 LLM Wiki 如何被建構、驗證，並透過檢查迴圈轉譯為零基礎易懂的教學 HTML 簡報。</p>
-      <div class="loop-flow">
-        <div class="flow-node">
-          <strong>1. 資料收集與 Ingest</strong>
-          <span>整理 5 篇理財核心 Markdown Wiki</span>
-        </div>
-        <div class="flow-arrow">➔</div>
-        <div class="flow-node gate">
-          <strong>Gate 1：Wiki 事實檢查</strong>
-          <span>驗證複利公式、除息扣減與費率數據（不通過則退回修正）</span>
-        </div>
-        <div class="flow-arrow">➔</div>
-        <div class="flow-node">
-          <strong>2. 查詢 Wiki 轉譯大綱</strong>
-          <span>將金融術語轉化為生活類比與對照圖</span>
-        </div>
-        <div class="flow-arrow">➔</div>
-        <div class="flow-node gate">
-          <strong>Gate 2：新手易懂度檢查</strong>
-          <span>檢查單頁字數上限、禁止未解釋術語、禁止超綱幻覺（不通過則重寫）</span>
-        </div>
-        <div class="flow-arrow">➔</div>
-        <div class="flow-node">
-          <strong>3. 輸出 HTML 簡報</strong>
-          <span>產出 9 頁互動式教學投影片</span>
-        </div>
+    <!-- Loop / Graph 流程圖 -->
+    <section class="loop-section" id="workflow-section">
+      <h2>Double-Loop Graph 流程與回饋設計</h2>
+      <p class="section-desc">包含兩個主要迴圈：<strong>Loop 1（Ingest ⇄ Gate 1 事實與一致性迴圈）</strong>與 <strong>Loop 2（大綱/HTML ⇄ Gate 2 易懂度與來源迴圈）</strong>，各 Gate <strong>重試上限皆為 2 次</strong>。</p>
+
+      <div class="svg-wrapper">
+        <svg viewBox="0 0 920 340" width="100%" role="img" aria-label="Double-Loop Workflow Diagram">
+          <defs>
+            <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 1 L 10 5 L 0 9 z" fill="#1B4332" />
+            </marker>
+            <marker id="arrow-loop" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 1 L 10 5 L 0 9 z" fill="#B91C1C" />
+            </marker>
+          </defs>
+
+          <rect x="20" y="70" width="135" height="68" rx="10" fill="#ECF3F0" stroke="#1B4332" stroke-width="2" />
+          <text x="87" y="98" text-anchor="middle" font-size="13" font-weight="bold" fill="#1B4332">Step 1: 收集資料</text>
+          <text x="87" y="118" text-anchor="middle" font-size="11" fill="#374151">5 篇原始來源 + Log</text>
+
+          <rect x="185" y="70" width="145" height="68" rx="10" fill="#FFFFFF" stroke="#1B4332" stroke-width="2" />
+          <text x="257" y="98" text-anchor="middle" font-size="13" font-weight="bold" fill="#1B4332">Step 2: Ingest 建 Wiki</text>
+          <text x="257" y="118" text-anchor="middle" font-size="11" fill="#374151">01~05.md + 來源/假設</text>
+
+          <polygon points="415,52 490,104 415,156 340,104" fill="#FEF3C7" stroke="#D97706" stroke-width="2" />
+          <text x="415" y="100" text-anchor="middle" font-size="12" font-weight="bold" fill="#78350F">Gate 1</text>
+          <text x="415" y="116" text-anchor="middle" font-size="10" fill="#78350F">算式/一致/來源</text>
+
+          <rect x="520" y="70" width="145" height="68" rx="10" fill="#FFFFFF" stroke="#1B4332" stroke-width="2" />
+          <text x="592" y="98" text-anchor="middle" font-size="13" font-weight="bold" fill="#1B4332">Step 3: 規劃白話大綱</text>
+          <text x="592" y="118" text-anchor="middle" font-size="11" fill="#374151">1頁1概念 + 類比</text>
+
+          <rect x="695" y="70" width="120" height="68" rx="10" fill="#FFFFFF" stroke="#1B4332" stroke-width="2" />
+          <text x="755" y="98" text-anchor="middle" font-size="13" font-weight="bold" fill="#1B4332">Step 4: 產簡報</text>
+          <text x="755" y="118" text-anchor="middle" font-size="11" fill="#374151">slides.html + 來源</text>
+
+          <polygon points="865,58 910,104 865,150 820,104" fill="#FEF3C7" stroke="#D97706" stroke-width="2" />
+          <text x="865" y="100" text-anchor="middle" font-size="12" font-weight="bold" fill="#78350F">Gate 2</text>
+          <text x="865" y="116" text-anchor="middle" font-size="10" fill="#78350F">易懂/字數/標籤</text>
+
+          <rect x="345" y="245" width="230" height="55" rx="10" fill="#1B4332" />
+          <text x="460" y="270" text-anchor="middle" font-size="13" font-weight="bold" fill="#FFFFFF">Step 5: 發布 GitHub Pages</text>
+          <text x="460" y="288" text-anchor="middle" font-size="11" fill="#ECF3F0">Wiki 首頁 + 互動簡報 + 繳交區</text>
+
+          <line x1="155" y1="104" x2="183" y2="104" stroke="#1B4332" stroke-width="2" marker-end="url(#arrow)" />
+          <line x1="330" y1="104" x2="338" y2="104" stroke="#1B4332" stroke-width="2" marker-end="url(#arrow)" />
+          <text x="505" y="96" text-anchor="middle" font-size="10" font-weight="bold" fill="#1B4332">PASS</text>
+          <line x1="490" y1="104" x2="518" y2="104" stroke="#1B4332" stroke-width="2" marker-end="url(#arrow)" />
+          <line x1="665" y1="104" x2="693" y2="104" stroke="#1B4332" stroke-width="2" marker-end="url(#arrow)" />
+          <line x1="815" y1="104" x2="818" y2="104" stroke="#1B4332" stroke-width="2" marker-end="url(#arrow)" />
+
+          <path d="M 865 150 L 865 272 L 578 272" fill="none" stroke="#1B4332" stroke-width="2" marker-end="url(#arrow)" />
+          <text x="872" y="215" font-size="10" font-weight="bold" fill="#1B4332">PASS</text>
+
+          <path d="M 415 156 L 415 195 L 257 195 L 257 141" fill="none" stroke="#B91C1C" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#arrow-loop)" />
+          <text x="336" y="188" text-anchor="middle" font-size="10" font-weight="bold" fill="#B91C1C">Loop 1 回饋：算式/一致/來源失敗 → 回 Step 2（上限 2 次）</text>
+
+          <path d="M 865 58 L 865 22 L 592 22 L 592 67" fill="none" stroke="#B91C1C" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#arrow-loop)" />
+          <text x="728" y="16" text-anchor="middle" font-size="10" font-weight="bold" fill="#B91C1C">Loop 2 回饋：超綱/字多 → 回 Step 3；排版/來源 → 回 Step 4（上限 2 次）</text>
+        </svg>
       </div>
+
+      <ul class="detail-list">
+        <li><strong>檢查標準</strong>：Gate 1 要求算式誤差 &lt; 1%、跨頁假設一致、數據標註來源或明示假設與稅費門檻；Gate 2 要求每頁核心講解約 120 字以內、配生活類比/圖表、標註具體 Wiki 來源，並含免責聲明與名詞表/測驗。</li>
+        <li><strong>重試上限與設計理由</strong>：每個 Gate 最多重跑 2 次避免無限迴圈；把事實/一致性拆在 Gate 1，把易懂度/來源標籤拆在 Gate 2，可避免數值錯誤進入簡報或長文直接灌入投影片。</li>
+      </ul>
+    </section>
+
+    <!-- 簡報頁 ↔ Wiki 條目 ↔ 原始來源對照表 -->
+    <section class="loop-section" id="mapping-section">
+      <h2>簡報頁 ↔ Wiki 條目 ↔ 原始來源對照表</h2>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>簡報頁碼</th>
+            <th>對應 Wiki 條目</th>
+            <th>原始來源（Raw Sources）</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>第 1 頁（封面＋免責聲明提示）</td><td>Wiki 01 ～ 05 總覽</td><td>Titan FX、OANDA Lab、市場先生、渣打銀行、基富通</td></tr>
+          <tr><td>第 2～3 頁（通膨、複利與 72 法則）</td><td><code>01-inflation-and-compounding.md</code></td><td>Titan FX 通膨詞彙、OANDA Lab 72 法則</td></tr>
+          <tr><td>第 4 頁（緊急預備金）</td><td><code>02-emergency-fund.md</code></td><td>Mr.Market 市場先生《緊急預備金是什麼？多少才夠？》</td></tr>
+          <tr><td>第 5～6 頁（指數 ETF 與內扣費用）</td><td><code>03-index-etf-basics.md</code></td><td>渣打銀行台灣《ETF內扣費用是什麼？會影響報酬嗎？》</td></tr>
+          <tr><td>第 7～8 頁（除息、總報酬與稅費提醒）</td><td><code>04-dividend-myths.md</code></td><td>渣打銀行台灣《ETF內扣費用是什麼？會影響報酬嗎？》</td></tr>
+          <tr><td>第 9 頁（定期定額與投資紀律）</td><td><code>05-dca-and-discipline.md</code></td><td>基富通／元大投信《【定期定額密技】技巧3：持續扣款、紀律投資》</td></tr>
+          <tr><td>第 10 頁（名詞表＋3 題小測驗）</td><td>Wiki 01 ～ 05 彙整</td><td>Titan FX、OANDA Lab、市場先生、渣打銀行、基富通</td></tr>
+          <tr><td>第 11 頁（參考資料與免責聲明）</td><td><code>raw-sources.md</code> 與 Wiki 01～05</td><td>Titan FX、OANDA Lab、市場先生、渣打銀行、基富通</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 實際執行紀錄 -->
+    <section class="loop-section" id="execution-log-section">
+      <h2>一次實際執行紀錄（真實發現與修正）</h2>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>輪次</th>
+            <th>節點</th>
+            <th>發現的問題</th>
+            <th>修正方式</th>
+            <th>是否通過</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>第 1 輪</td>
+            <td>Gate 1（Wiki 01, 03, 04, 05）</td>
+            <td>通膨與便當漲幅數字對不上；257/755 萬（約 34%）被寫成「一半」；14 變 9 個便當（約 36%）寫成 35%；費用對照缺「稅前同 7% 假設」；錯過最佳交易日缺期間/來源；利率與 7% 缺假設/日期；二代健保門檻與美股 30% 預扣稅未寫；05 檔名與標題不符；方格子連結無法直接讀取。</td>
+            <td>改寫計算與假設說明（標註「假設值，非保證」與查詢日期 2026-11-21），補上二代健保門檻與美股 30% 預扣稅提醒，05 檔名改為 <code>05-dca-and-discipline.md</code>，並將已擷取的 5 篇來源填入清單。</td>
+            <td>修正後通過</td>
+          </tr>
+          <tr>
+            <td>第 2 輪</td>
+            <td>Gate 2（<code>slides.html</code>）</td>
+            <td>每頁僅寫「知識來源：LLM Wiki 全系列」過於籠統；缺名詞表/小測驗與參考資料/免責聲明頁；具投資建議感。</td>
+            <td>每頁改標註具體 Wiki 條目，新增第 10 頁（名詞表＋小測驗）與第 11 頁（參考資料與免責聲明），並加上「教學用途，非投資建議」。</td>
+            <td>修正後通過</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 反思 -->
+    <section class="loop-section" id="reflection-section">
+      <h2>反思：哪個節點最常出錯？如何調整檢查流程？</h2>
+      <ul class="detail-list">
+        <li><strong>最常出錯的節點</strong>：從 Wiki 轉成簡報大綱與內容的步驟最容易出錯，容易把數字簡化、改寫或誇大（例如把約 34% 寫成一半、把 35.7% 寫成 35%），或漏掉前提假設與來源。</li>
+        <li><strong>把檢查往前移</strong>：在 Ingest 階段建立「數據與假設表」，每個數字記錄來源 URL、擷取日期與前提假設，簡報只引用表內已核對項目，Gate 1 改為逐項比對數據表。</li>
+        <li><strong>修改 Workflow</strong>：在 Gate 2 之外強化跨頁與跨來源一致性檢查（全簡報同一概念使用同一組數字與假設），並在流程圖上明確畫出退回修正的回饋線。</li>
+      </ul>
+    </section>
+
+    <!-- 作業繳交資訊（6 項） -->
+    <section class="loop-section" id="submission-info">
+      <h2>作業繳交資訊（6 項對照）</h2>
+      <p class="section-desc">繳交標題格式：<code>學校 學號 系級 姓名 主題</code>（範例：<code>北科大 [學號] 電資四 楊博翔 個人理財與指數化投資 LLM Wiki 與教學簡報</code>）</p>
+      <ol class="submission-list">
+        <li><strong>1. LLM Wiki 主題與簡短介紹</strong>：<a href="#wiki-reader">個人理財與指數化投資入門</a>（5 篇 Wiki＋<code>raw-sources.md</code>＋<code>wiki-log.md</code>，教學用途，非投資建議）。</li>
+        <li><strong>2. LLM Wiki 連結或成果</strong>：<a href="index.html">網頁版 Wiki 閱讀器</a>／原始檔 <code>01</code>～<code>05-dca-and-discipline.md</code>、<code>raw-sources.md</code>、<code>wiki-log.md</code>、<code>AGENTS.md</code>。</li>
+        <li><strong>3. 教學 HTML 簡報連結</strong>：<a href="slides.html">互動式教學 HTML 簡報（slides.html）</a>。</li>
+        <li><strong>4. Loop / Graph 流程圖或說明</strong>：<a href="#workflow-section">Double-Loop Graph 流程圖與門檻說明</a>。</li>
+        <li><strong>5. 一次實際執行的結果或檢查紀錄</strong>：<a href="#execution-log-section">實際執行紀錄表格</a>與<a href="#mapping-section">簡報/Wiki/來源對照表</a>。</li>
+        <li><strong>6. 反思：哪個節點最常出錯？如何調整檢查流程？</strong>：<a href="#reflection-section">反思說明</a>。</li>
+      </ol>
     </section>
   </main>
 
