@@ -12,13 +12,13 @@
 ```mermaid
 flowchart LR
     A["Step 1<br/>收集理財資料"] --> B["Step 2<br/>整理 5 篇 Wiki"]
-    B --> C{"Gate 1<br/>公式與事實檢查"}
-    C -- "退回修正" --> B
-    C -- "通過" --> D["Step 3<br/>規劃白話簡報大綱"]
-    D --> E{"Gate 2-A<br/>易懂度與邊界檢查"}
-    E -- "退回重寫" --> D
-    E -- "通過" --> F["Step 4<br/>生成 9 頁 HTML 簡報"]
-    F --> G{"Gate 2-B<br/>排版與來源檢查"}
-    G -- "退回調整" --> F
+    B --> C(["Gate 1<br/>公式與事實檢查"])
+    C -- "退回" --> B
+    C -- "通過" --> D["Step 3<br/>規劃簡報大綱"]
+    D --> E(["Gate 2-A<br/>易懂度與邊界檢查"])
+    E -- "退回" --> D
+    E -- "通過" --> F["Step 4<br/>生成 9 頁簡報"]
+    F --> G(["Gate 2-B<br/>排版與來源檢查"])
+    G -- "退回" --> F
     G -- "通過" --> H["Step 5<br/>部署 GitHub Pages"]
 ```
