@@ -10,15 +10,15 @@
 ## 🔄 Workflow / Loop Graph 流程圖
 
 ```mermaid
-flowchart TD
-    A["Step 1：收集理財核心資料"] --> B["Step 2：Ingest 整理 5 篇 LLM Wiki (.md)"]
-    B --> C{"Gate 1：Wiki 事實與公式檢查"}
-    C -- "FAIL：公式或數據有誤" --> B
-    C -- "PASS" --> D["Step 3：查詢 Wiki 規劃白話簡報大綱 (1頁1概念＋生活類比)"]
-    D --> E{"Gate 2-A：大綱易懂度與邊界檢查"}
-    E -- "FAIL：超綱或內容過載" --> D
-    E -- "PASS" --> F["Step 4：生成 9 頁互動式教學 HTML 簡報"]
-    F --> G{"Gate 2-B：排版與來源對應檢查"}
-    G -- "FAIL：破版或漏來源" --> F
-    G -- "PASS" --> H["Step 5：部署至 GitHub Pages 上線"]
+flowchart LR
+    A["Step 1<br/>收集理財資料"] --> B["Step 2<br/>整理 5 篇 Wiki"]
+    B --> C{"Gate 1<br/>公式與事實檢查"}
+    C -- "退回修正" --> B
+    C -- "通過" --> D["Step 3<br/>規劃白話簡報大綱"]
+    D --> E{"Gate 2-A<br/>易懂度與邊界檢查"}
+    E -- "退回重寫" --> D
+    E -- "通過" --> F["Step 4<br/>生成 9 頁 HTML 簡報"]
+    F --> G{"Gate 2-B<br/>排版與來源檢查"}
+    G -- "退回調整" --> F
+    G -- "通過" --> H["Step 5<br/>部署 GitHub Pages"]
 ```
