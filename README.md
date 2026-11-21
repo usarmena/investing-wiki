@@ -20,5 +20,5 @@ flowchart LR
     E -- "通過" --> F["Step 4<br/>生成 9 頁簡報"]
     F --> G(["Gate 2-B<br/>排版與來源檢查"])
     G -- "退回" --> F
-    G -- "通過" --> H["Step 5<br/>部署 GitHub Pages"]
+    G -- "通過" --> H["Step 5<br/>部署 Pages 上線"]
 ```
