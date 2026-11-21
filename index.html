@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>指數化投資入門｜LLM Wiki 知識庫</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <div class="brand">📚 FinWiki × 指數化投資知識庫</div>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-btn active">LLM Wiki 知識庫（5 篇）</a>
+      <a href="slides.html" class="nav-btn">開啟教學 HTML 簡報（9 頁）→</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero-box">
+      <div class="hero-text">
+        <span class="kicker">LLM Wiki Knowledge Base（5 Ingested Notes）</span>
+        <h1>個人理財與指數化投資入門 Wiki</h1>
+        <p>本知識庫透過「先討論、後生成」結構化整理 5 篇核心理財概念（通膨複利、緊急預備金、指數 ETF、股息迷思、定期定額），並作為下方教學 HTML 簡報的唯一知識來源。</p>
+      </div>
+      <a href="slides.html" class="cta-slides">🎬 開始觀看 9 頁教學簡報 →</a>
+    </section>
+
+    <!-- 5 篇 LLM Wiki 互動閱讀器 -->
+    <section class="wiki-layout">
+      <aside class="wiki-sidebar">
+        <h2>🗂️ Wiki 知識條目（共 5 篇）</h2>
+        <button type="button" class="wiki-tab active" data-target="wiki-1">
+          01. 通膨侵蝕與複利雪球
+          <small>01-inflation-and-compounding.md</small>
+        </button>
+        <button type="button" class="wiki-tab" data-target="wiki-2">
+          02. 緊急預備金配置原則
+          <small>02-emergency-fund.md</small>
+        </button>
+        <button type="button" class="wiki-tab" data-target="wiki-3">
+          03. 指數化投資與 ETF
+          <small>03-index-etf-basics.md</small>
+        </button>
+        <button type="button" class="wiki-tab" data-target="wiki-4">
+          04. 配息左手換右手迷思
+          <small>04-dividend-myths.md</small>
+        </button>
+        <button type="button" class="wiki-tab" data-target="wiki-5">
+          05. 定期定額與投資紀律
+          <small>05-asset-allocation.md</small>
+        </button>
+      </aside>
+
+      <div class="wiki-viewer">
+        <!-- Wiki 1 -->
+        <article class="wiki-article active" id="wiki-1">
+          <div class="wiki-meta-bar">
+            <span>來源檔案：<code>01-inflation-and-compounding.md</code></span>
+            <a href="01-inflation-and-compounding.md" target="_blank">查看原始 Markdown ↗</a>
+          </div>
+          <h2>01. 為什麼錢放銀行會變窮？——通膨與複利效應</h2>
+          <p>許多大學生與新鮮人習慣把打工或薪水存進一般活存帳戶（年利率約 0.5%～1%），認為「本金不會少就是最安全」，卻忽略了購買力正在逐年縮水。</p>
+          <div class="analogy-card">
+            <strong>💡 生活化比喻：</strong>十年前一個排骨便當 70 元，現在要 110 元。錢的「數字面額」沒變，但實質能買到的東西變少了，這就是通貨膨脹。
+          </div>
+          <h3>核心公式與對照實驗</h3>
+          <div class="formula-pill">
+            複利公式：FV = PV × (1 + r)ⁿ ｜ 72 法則：資產翻倍年數 ≈ 72 ÷ 年化報酬率(%)
+          </div>
+          <ul>
+            <li><strong>單筆 10 萬元放銀行定存（年化 1.5%）</strong>：20 年後約 <strong>13.5 萬元</strong>，勉強打平物價上漲。</li>
+            <li><strong>單筆 10 萬元投入大盤指數（年化 7%）</strong>：20 年後約 <strong>38.7 萬元</strong>（差距高達 2.8 倍）。</li>
+            <li><strong>72 法則速算</strong>：年化報酬率 7% 時，資產大約每 <strong>10.3 年</strong>翻倍一次。</li>
+          </ul>
+        </article>
+
+        <!-- Wiki 2 -->
+        <article class="wiki-article" id="wiki-2">
+          <div class="wiki-meta-bar">
+            <span>來源檔案：<code>02-emergency-fund.md</code></span>
+            <a href="02-emergency-fund.md" target="_blank">查看原始 Markdown ↗</a>
+          </div>
+          <h2>02. 投資前先穿防彈衣——緊急預備金配置原則</h2>
+          <p>新手最常犯的錯誤是「把帳戶裡所有的錢一次投入股市」，結果遇到突發狀況（如生病、車禍維修、待業）時，被迫在股市大跌的低點認賠賣出股票換現金。</p>
+          <div class="analogy-card">
+            <strong>💡 生活化比喻：</strong>緊急預備金就像開車繫安全帶或打遊戲穿防彈衣，平常覺得占空間，但遇到意外時能保住你不出局。
+          </div>
+          <h3>準備水位與存放三大原則</h3>
+          <ul>
+            <li><strong>計算基準</strong>：以「每月必要生活開銷」（房租、伙食、交通）為準，而非月薪。</li>
+            <li><strong>安全水位</strong>：學生與家人同住者準備 <strong>3 個月</strong>生活費；獨立租屋的社會新鮮人準備 <strong>6 個月</strong>生活費。</li>
+            <li><strong>存放工具</strong>：必須具備「高流動性、零本金波動」，推薦放在<strong>數位銀行高利活存</strong>（1.5%～2.5%），不可拿去買股票或綁長年期儲蓄險。</li>
+          </ul>
+        </article>
+
+        <!-- Wiki 3 -->
+        <article class="wiki-article" id="wiki-3">
+          <div class="wiki-meta-bar">
+            <span>來源檔案：<code>03-index-etf-basics.md</code></span>
+            <a href="03-index-etf-basics.md" target="_blank">查看原始 Markdown ↗</a>
+          </div>
+          <h2>03. 不挑個股也能贏多數人——指數化投資與 ETF</h2>
+          <p>一般人沒有時間每天研究財報，單壓一兩家公司的股票容易面臨「賺了指數、賠了個股」甚至單一企業衰退的風險。</p>
+          <div class="analogy-card">
+            <strong>💡 生活化比喻：</strong>買個股像是「賭某位選手在奧運百米拿金牌」；買市值型 ETF 則是「直接買下整個奧運代表隊」，靠整體經濟成長獲利。
+          </div>
+          <h3>代表標的與內扣費用殺傷力</h3>
+          <ul>
+            <li><strong>自動汰弱留強</strong>：市值型 ETF（台股如 <strong>0050 / 006208</strong>，美股如 <strong>VOO</strong>）會定期把市值縮水的公司剔除，納入成長壯大的新企業。</li>
+            <li><strong>內扣費用（Expense Ratio）</strong>：同樣投入 100 萬元、年化報酬 7% 放 30 年，內扣 <strong>0.03%</strong>（VOO）可累積約 <strong>755 萬元</strong>；若買內扣 <strong>1.5%</strong> 的基金只剩 <strong>498 萬元</strong>，超過 250 萬元被費用吃掉。</li>
+          </ul>
+        </article>
+
+        <!-- Wiki 4 -->
+        <article class="wiki-article" id="wiki-4">
+          <div class="wiki-meta-bar">
+            <span>來源檔案：<code>04-dividend-myths.md</code></span>
+            <a href="04-dividend-myths.md" target="_blank">查看原始 Markdown ↗</a>
+          </div>
+          <h2>04. 配息不是天上掉下來的禮物——市值型 vs 高股息迷思</h2>
+          <p>許多新手特別偏愛「高股息 ETF」，誤以為領到現金股息就是額外多賺的零用錢，忽略了「除息參考價扣減」與「總報酬率」。</p>
+          <div class="analogy-card">
+            <strong>💡 生活化比喻：</strong>高股息配息就像「把你左邊口袋的 100 元鈔票，拆成 95 元放左口袋、5 元放右口袋」，總金額在發放當下完全沒有變多。
+          </div>
+          <h3>總報酬率（Total Return）才是唯一標準</h3>
+          <ul>
+            <li><strong>除息機制</strong>：股價 100 元配息 5 元，除息日開盤價會直接扣減為 95 元；必須等到股價漲回 100 元（填息）才算真正獲利。</li>
+            <li><strong>年輕累積期策略</strong>：年輕人不需要靠股息過生活，領息反而可能被課稅與扣二代健保（2.11%），且中斷複利效果，應優先選擇<strong>市值型 ETF</strong>。</li>
+          </ul>
+        </article>
+
+        <!-- Wiki 5 -->
+        <article class="wiki-article" id="wiki-5">
+          <div class="wiki-meta-bar">
+            <span>來源檔案：<code>05-asset-allocation.md</code></span>
+            <a href="05-asset-allocation.md" target="_blank">查看原始 Markdown ↗</a>
+          </div>
+          <h2>05. 睡得著覺的投資法——定期定額與紀律執行</h2>
+          <p>許多人一進場就天天盯盤，遇到下跌就恐慌賣出，或是總想著「等跌到最低點再買」，結果一路空手看著大盤創新高。</p>
+          <div class="analogy-card">
+            <strong>💡 生活化比喻：</strong>定期定額就像去超市買水果，每個月固定花 3,000 元：水果變貴時少買幾顆，水果大特價時自動多買幾顆，長期平均成本自然漂亮。
+          </div>
+          <h3>微笑曲線與新手執行三步驟</h3>
+          <ul>
+            <li><strong>微笑曲線（Smile Curve）</strong>：市場經歷「下跌 → 盤整 → 回升」時，低檔累積的便宜股數會在回升時帶來豐厚報酬。</li>
+            <li><strong>待在市場勝過預測市場</strong>：錯過過去 20 年表現最好的 10 個交易日，長期總報酬會直接腰斬。</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Loop / Graph 流程設計視覺化 -->
+    <section class="loop-section">
+      <h2>🔄 本專案的 Double-Loop Graph 資訊處理與檢查架構</h2>
+      <p style="color:var(--text-muted);font-size:0.92rem;">說明 LLM Wiki 如何被建構、驗證，並透過檢查迴圈轉譯為零基礎易懂的教學 HTML 簡報。</p>
+      <div class="loop-flow">
+        <div class="flow-node">
+          <strong>1. 資料收集與 Ingest</strong>
+          <span>整理 5 篇理財核心 Markdown Wiki</span>
+        </div>
+        <div class="flow-arrow">➔</div>
+        <div class="flow-node gate">
+          <strong>Gate 1：Wiki 事實檢查</strong>
+          <span>驗證複利公式、除息扣減與費率數據（不通過則退回修正）</span>
+        </div>
+        <div class="flow-arrow">➔</div>
+        <div class="flow-node">
+          <strong>2. 查詢 Wiki 轉譯大綱</strong>
+          <span>將金融術語轉化為生活類比與對照圖</span>
+        </div>
+        <div class="flow-arrow">➔</div>
+        <div class="flow-node gate">
+          <strong>Gate 2：新手易懂度檢查</strong>
+          <span>檢查單頁字數上限、禁止未解釋術語、禁止超綱幻覺（不通過則重寫）</span>
+        </div>
+        <div class="flow-arrow">➔</div>
+        <div class="flow-node">
+          <strong>3. 輸出 HTML 簡報</strong>
+          <span>產出 9 頁互動式教學投影片</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.querySelectorAll(".wiki-tab").forEach((tab) => {
+      tab.addEventListener("click", () => {
+        document.querySelectorAll(".wiki-tab").forEach((t) => t.classList.remove("active"));
+        document.querySelectorAll(".wiki-article").forEach((a) => a.classList.remove("active"));
+        tab.classList.add("active");
+        document.getElementById(tab.dataset.target).classList.add("active");
+      });
+    });
+  </script>
+</body>
+</html>

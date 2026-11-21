@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>零基礎搞懂指數化投資｜教學 HTML 簡報</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <div class="brand">🎬 FinWiki 互動教學簡報</div>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-btn">← 返回 LLM Wiki 知識庫</a>
+      <a href="slides.html" class="nav-btn active">教學簡報（9 頁）</a>
+    </nav>
+  </header>
+
+  <main class="slides-wrapper">
+    <div class="progress-header">
+      <span id="slide-counter">第 1 頁 / 共 9 頁</span>
+      <span id="slide-source-tag">知識來源：LLM Wiki 全系列</span>
+    </div>
+    <div class="progress-bar-bg">
+      <div class="progress-bar-fill" id="progress-fill"></div>
+    </div>
+
+    <div class="slide-stage">
+      <!-- Slide 1：封面 -->
+      <section class="slide active" data-source="LLM Wiki 總覽（5 篇知識庫）">
+        <span class="slide-tag">零基礎理財第一課</span>
+        <h1>不用天天盯盤、<br>也能穩健變有錢的「指數化投資」</h1>
+        <p class="slide-lead">專為大學生與社會新鮮人設計的白話入門指南——用生活比喻與真實數字，5 分鐘看懂為什麼多數人買大盤 ETF 就能贏過頻繁選股。</p>
+        <div class="two-cards">
+          <div class="info-box good">
+            <h3>🎯 看完這份簡報你會學會</h3>
+            <p>1. 為什麼錢放銀行會變薄？<br>2. 投資前必須準備多少救命錢？<br>3. 市值型 ETF vs 高股息怎麼選？</p>
+          </div>
+          <div class="info-box">
+            <h3>📚 簡報知識來源</h3>
+            <p>本簡報所有公式、數據與觀念皆嚴格萃取自 <strong>FinWiki（5 篇指數化投資知識庫）</strong>，無誇大報明牌內容。</p>
+          </div>
+        </div>
+        <div class="takeaway-box">👉 點擊右下角「下一頁」或按鍵盤右方向鍵 [→] 開始學習！</div>
+      </section>
+
+      <!-- Slide 2：通膨真相 -->
+      <section class="slide" data-source="01-inflation-and-compounding.md">
+        <span class="slide-tag">章節 01 · 通貨膨脹</span>
+        <h2>為什麼把錢全放銀行，其實正在變窮？</h2>
+        <p class="slide-lead">銀行帳戶裡的數字雖然不會少，但東西越來越貴，你的「實質購買力」每年都在被通膨偷走。</p>
+        <div class="two-cards">
+          <div class="info-box">
+            <h3>🍱 10 年前的 1,000 元</h3>
+            <p>排骨便當一個 70 元，1,000 元可以買 <strong>14 個便當</strong>。</p>
+          </div>
+          <div class="info-box bad">
+            <h3>💸 今天的 1,000 元</h3>
+            <p>排骨便當漲到 110 元，同樣 1,000 元只買得到 <strong>9 個便當</strong>（購買力縮水 35%）。</p>
+          </div>
+        </div>
+        <div class="takeaway-box">💡 核心結論：活存利率（約 0.8%）追不上通膨（約 2.5%），不投資才是最大的隱形風險。</div>
+      </section>
+
+      <!-- Slide 3：複利雪球 -->
+      <section class="slide" data-source="01-inflation-and-compounding.md">
+        <span class="slide-tag">章節 01 · 時間複利與 72 法則</span>
+        <h2>複利魔法：讓「賺到的錢」繼續幫你賺錢</h2>
+        <p class="slide-lead">假設你存下 <strong>10 萬元</strong>，完全不再額外加碼，放 20 年後的結果對比：</p>
+        <div class="bar-compare">
+          <div class="bar-row">
+            <div class="bar-label"><span>🏦 銀行定存（年化 1.5%）</span><span>13.5 萬元</span></div>
+            <div class="bar-track"><div class="bar-fill muted" style="width: 35%;">僅增加 3.5 萬</div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>📈 全球／大盤指數（年化 7.0%）</span><span>38.7 萬元（翻近 4 倍）</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width: 100%;">利滾利雪球效應</div></div>
+          </div>
+        </div>
+        <div class="takeaway-box">🧮 72 法則速算：用 72 ÷ 年化報酬率(7%) ≈ 10.3 年，資產就會自動翻倍一次！</div>
+      </section>
+
+      <!-- Slide 4：緊急預備金 -->
+      <section class="slide" data-source="02-emergency-fund.md">
+        <span class="slide-tag">章節 02 · 投資前的第一道防線</span>
+        <h2>All-in 之前，先幫自己穿好「防彈衣」</h2>
+        <p class="slide-lead">若把全部生活費都拿去買股票，萬一突然需要急用錢又剛好遇到股市大跌，就會被迫在最低點認賠賣出。</p>
+        <div class="two-cards">
+          <div class="info-box good">
+            <h3>🛡️ 緊急預備金要存多少？</h3>
+            <p>• <strong>學生／住家裡</strong>：存滿 <strong>3 個月</strong>必要生活費<br>• <strong>租屋／新鮮人</strong>：存滿 <strong>6 個月</strong>必要生活費<br>（以「每月開銷」計算，不是用月薪算！）</p>
+          </div>
+          <div class="info-box">
+            <h3>🏦 這筆錢該放在哪裡？</h3>
+            <p>• <strong>數位銀行高利活存</strong>（1.5%～2.5%）<br>• 原則：<strong>隨時能領、本金零波動</strong><br>• 禁止拿去買股票或綁長年期儲蓄險</p>
+          </div>
+        </div>
+        <div class="takeaway-box">💡 順序很重要：先存滿預備金 ➔ 再開始投資，遇到股災你才睡得著覺。</div>
+      </section>
+
+      <!-- Slide 5：什麼是指數化投資與 ETF -->
+      <section class="slide" data-source="03-index-etf-basics.md">
+        <span class="slide-tag">章節 03 · 指數化投資與 ETF</span>
+        <h2>不會挑股票？那就「把整個代表隊買下來」</h2>
+        <p class="slide-lead">ETF（指數股票型基金）就像一個大購物籃，幫你一次買進市場上最強的前 50 或前 500 大企業。</p>
+        <div class="two-cards">
+          <div class="info-box bad">
+            <h3>🎲 單買個股的風險</h3>
+            <p>就像在奧運百米賽跑<strong>只賭一位選手拿金牌</strong>。萬一他受傷或失常（公司衰退），你的資產就會重傷。</p>
+          </div>
+          <div class="info-box good">
+            <h3>🏆 買市值型 ETF（如 0050 / VOO）</h3>
+            <p>就像<strong>直接買下整個奧運代表隊</strong>！指數會自動「汰弱留強」，把表現差的公司踢掉、納入新強者。</p>
+          </div>
+        </div>
+        <div class="takeaway-box">💡 買進 0050 或 006208，就等於同時成為台積電、聯發科等台灣前 50 大企業的股東。</div>
+      </section>
+
+      <!-- Slide 6：內扣費用的隱形殺手 -->
+      <section class="slide" data-source="03-index-etf-basics.md">
+        <span class="slide-tag">章節 03 · 魔鬼在細節裡</span>
+        <h2>別讓「內扣費用」悄悄吃掉你一半的退休金</h2>
+        <p class="slide-lead">基金與 ETF 每年都會從淨值自動扣除管理費。看起來只差 1% 多，30 年後差距卻非常驚人（本金 100 萬、年化 7%）：</p>
+        <div class="bar-compare">
+          <div class="bar-row">
+            <div class="bar-label"><span>✅ 低成本指數 ETF（內扣 0.03%，如 VOO）</span><span>最終領回 755 萬元</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width: 100%;">幾乎完整保留複利成果</div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>⚠️ 高費用主動基金（內扣 1.50%）</span><span>最終僅剩 498 萬元</span></div>
+            <div class="bar-track"><div class="bar-fill warn" style="width: 66%;">超過 257 萬元被手續費吃掉！</div></div>
+          </div>
+        </div>
+        <div class="takeaway-box">💡 挑選 ETF 黃金法則：追蹤相同指數時，優先選擇「內扣費用最低」的那一檔。</div>
+      </section>
+
+      <!-- Slide 7：破解高股息迷思 -->
+      <section class="slide" data-source="04-dividend-myths.md">
+        <span class="slide-tag">章節 04 · 破解配息迷思</span>
+        <h2>高股息不是多賺的！看懂「左手換右手」</h2>
+        <p class="slide-lead">很多新手以為配息 8% 就是多領 8% 零用錢，但除息當天股價會直接扣掉配息金額：</p>
+        <div class="two-cards">
+          <div class="info-box">
+            <h3>👖 除息前：左口袋 100 元</h3>
+            <p>你持有一張股價 <strong>100 元</strong>的 ETF，總資產為 100 元。</p>
+          </div>
+          <div class="info-box good">
+            <h3>👖 除息後：左 95 元 ＋ 右 5 元</h3>
+            <p>發放 5 元現金股息後，股價開盤直接變成 <strong>95 元</strong>。95 + 5 依然等於 100 元！</p>
+          </div>
+        </div>
+        <div class="takeaway-box">💡 年輕人還在累積資產，應看重「總報酬率（市值型 ETF）」，而非把本金拆成股息領出來花掉。</div>
+      </section>
+
+      <!-- Slide 8：定期定額與微笑曲線 -->
+      <section class="slide" data-source="05-asset-allocation.md">
+        <span class="slide-tag">章節 05 · 克服人性的紀律</span>
+        <h2>什麼時候進場最好？答案是「定期定額」</h2>
+        <p class="slide-lead">連華爾街專家都無法精準預測明天會漲還是跌。每月發薪日固定扣款，反而能把市場下跌變成你的好朋友：</p>
+        <div class="two-cards">
+          <div class="info-box">
+            <h3>🛒 超市買水果比喻</h3>
+            <p>每月固定花 3,000 元買水果：<br>• 水果變貴時 ➔ 自動少買幾顆<br>• 水果打折時 ➔ <strong>自動多買幾顆</strong></p>
+          </div>
+          <div class="info-box good">
+            <h3>😊 微笑曲線效應</h3>
+            <p>當股市經歷「下跌 ➔ 盤整 ➔ 回升」，因為你在低點累積了大量便宜股數，只要價格回到起跌點就已經賺錢！</p>
+          </div>
+        </div>
+        <div class="takeaway-box">💡 統計顯示：錯過股市表現最好的 10 天，長期報酬就會腰斬——「待在市場裡」最重要。</div>
+      </section>
+
+      <!-- Slide 9：總結與行動清單 -->
+      <section class="slide" data-source="LLM Wiki 全系列總結">
+        <span class="slide-tag">總結 · 新手實戰行動清單</span>
+        <h2>今天就能開始的「極簡理財三步驟」</h2>
+        <p class="slide-lead">投資不需要複雜的技術分析，把紀律交給系統，把時間留給自己的專業與生活：</p>
+        <div class="info-box good" style="margin-bottom: 1rem;">
+          <h3>✅ Step 1：存好 3～6 個月緊急預備金</h3>
+          <p>放在高利活存帳戶，打造不被迫認賠賣股的安全防護網。</p>
+        </div>
+        <div class="info-box good" style="margin-bottom: 1rem;">
+          <h3>✅ Step 2：設定每月發薪日自動定期定額</h3>
+          <p>挑選低內扣費用的市值型 ETF（如台股 006208 / 0050 或美股 VOO），每月固定投入。</p>
+        </div>
+        <div class="info-box good">
+          <h3>✅ Step 3：關閉看盤軟體，長期持有 10 年以上</h3>
+          <p>股息自動再投入，讓時間與複利幫你滾出第一桶金。</p>
+        </div>
+      </section>
+
+      <!-- 簡報底部翻頁控制 -->
+      <div class="slide-controls">
+        <button type="button" class="ctrl-btn" id="prev-btn" disabled>← 上一頁</button>
+        <span class="hint-key">支援鍵盤 [←] [→] 方向鍵切換投影片</span>
+        <button type="button" class="ctrl-btn" id="next-btn">下一頁 →</button>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const slides = document.querySelectorAll(".slide");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+    const counterEl = document.getElementById("slide-counter");
+    const sourceTagEl = document.getElementById("slide-source-tag");
+    const progressFill = document.getElementById("progress-fill");
+    let currentIdx = 0;
+
+    function updateSlide(index) {
+      slides.forEach((s, i) => s.classList.toggle("active", i === index));
+      counterEl.textContent = `第 ${index + 1} 頁 / 共 ${slides.length} 頁`;
+      sourceTagEl.textContent = `知識來源：${slides[index].dataset.source}`;
+      progressFill.style.width = `${((index + 1) / slides.length) * 100}%`;
+      prevBtn.disabled = index === 0;
+      nextBtn.disabled = index === slides.length - 1;
+    }
+
+    prevBtn.addEventListener("click", () => {
+      if (currentIdx > 0) updateSlide(--currentIdx);
+    });
+
+    nextBtn.addEventListener("click", () => {
+      if (currentIdx < slides.length - 1) updateSlide(++currentIdx);
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowRight" && currentIdx < slides.length - 1) updateSlide(++currentIdx);
+      if (e.key === "ArrowLeft" && currentIdx > 0) updateSlide(--currentIdx);
+    });
+  </script>
+</body>
+</html>
